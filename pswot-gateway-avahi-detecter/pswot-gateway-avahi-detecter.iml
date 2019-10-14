@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Osmorc" name="OSGi">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="pswot-gateway-avahi-detecter-0.0.1-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="br.com.semanticwot.pswot.gateway.avahi.bundle.Activator" bundleSymbolicName="br.com.semanticwot.pswot-gateway-avahi-detecter" bundleVersion="0.0.1.SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+        <additionalProperties>
+          <property key="Export-Package" value="avahi4j.*" />
+          <property key="Import-Package" value="*" />
+          <property key="Bundle-Name" value="pswot-gateway-avahi-detecter" />
+        </additionalProperties>
+        <additionalJARContents />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.core:4.3.0" level="project" />
+    <orderEntry type="library" name="Maven: br.com.semanticwot:pswot-gateway-interfaces:0.0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.jamonapi:jamon:2.81" level="project" />
+    <orderEntry type="library" name="Maven: com.hazelcast:hazelcast-all:3.2.5" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.findbugs:annotations:1.3.2" level="project" />
+  </component>
+</module>
