@@ -4,7 +4,6 @@
 
     sudo apt-get install avahi-common
     sudo apt-get install libavahi-common-dev
-    sudo apt-get install libavahi-common-dev
     sudo apt-get install libavahi-glib-dev
     sudo apt-get install libavahi-client-dev
 
@@ -24,7 +23,7 @@ Baixar o projeto e dar build no projeto:
 > personalizados e/ou escutar dispositivos indefinidamente (ler seção de
 > Zeroconf).
 
-Para testar e ver se os dispositivos simulados estão publicando e o Avahi funcionando, basta executar o things Simulator como aplicação java normal, pela própria IDE. Você deve ver no console os dispositivos que estão publicando e sendo descobertos, e logo imprimindo seus dados do TXTRecord.
+Para testar e ver se os dispositivos simulados estão publicando e o Avahi funcionando, basta executar o things Simulator como aplicação java normal, pela própria IDE. Você deve ver no console os dispositivos que estão publicando. Para ver o conteudo das mensagens publicadas, você deve executar o DetecterSimulator e assim ver as things sendo descobertas, e logo imprimindo seus dados do TXTRecord.
 
 ## Instalar ZeroConf e MQTT no dispositivo fisico
 
