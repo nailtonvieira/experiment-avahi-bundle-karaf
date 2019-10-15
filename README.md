@@ -1,5 +1,7 @@
 # Simulador de Things com Zeroconf
 
+Primeiro, é preciso entender o que é o mDNS e qual é o seu propósito. O melhor material prático que encontrei foi esse: [https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NetServices/Introduction.html](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NetServices/Introduction.html). Ele dá exemplos e uma ótima explicação.
+
 ## Instalar o Avahi client no Ubuntu
 
     sudo apt-get install avahi-common
