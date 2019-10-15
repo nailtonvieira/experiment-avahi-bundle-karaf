@@ -12,7 +12,7 @@
 https://github.com/nailtonvieira/cloudsemanticwot/blob/master/experiment/avahi_JNI.tar
 
     copiar o avahi4j.jar para o diretório /usr/share/java 
-    copiar libavahi4j.so para o diretório /usr/lib/jni
+    copiar libavahi4j.so para o diretório /usr/lib e dar permissão para outros usuários terem acesso 
 
 Baixar o projeto e dar build no projeto:
 
