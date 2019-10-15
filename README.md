@@ -32,15 +32,19 @@ Baixar o projeto e dar build no projeto:
 Para testar e ver se os dispositivos simulados estão publicando e o Avahi funcionando, basta executar o things Simulator como aplicação java normal, pela própria IDE. Você deve ver no console os dispositivos que estão publicando e sendo descobertos, e logo imprimindo seus dados do TXTRecord.
 
 1. Executa o Main do ThingsSimulator
+
 ![Executa o Main do ThingsSimulator](https://github.com/nailtonvieira/experiment-avahi-bundle-karaf/blob/master/img/2_executa_thing_simulator.png)
 
-2. Executa o Main DetectorSimulator
+3. Executa o Main DetectorSimulator
+
 ![Executa o DetectorSimulator](https://github.com/nailtonvieira/experiment-avahi-bundle-karaf/blob/master/img/3_executa_detector.png)
 
-3. Aperta enter na tela no console do ThingsSimulator
+4. Aperta enter na tela no console do ThingsSimulator
+
 ![Aperta enter na tela do ThingsSimulator](https://github.com/nailtonvieira/experiment-avahi-bundle-karaf/blob/master/img/4_aperta_enter_no_thing_simulator.png)
 
-4. Aperta enter na tela no console do DetectorSimulator
+5. Aperta enter na tela no console do DetectorSimulator
+
 ![Aperta enter na tela no console do DetectorSimulator](https://github.com/nailtonvieira/experiment-avahi-bundle-karaf/blob/master/img/5_aperta_enter_no_detectot_simulator.png)
 
 Assim, na tela do DetectorSimulator você verá as mensagens publicadas pelo ThingsSimulator.
@@ -87,3 +91,5 @@ A diferença entre o DetectorSimulator e o Detecter (projeto com avahi que será
 <p align="center">
   <img src="https://github.com/nailtonvieira/cloudsemanticwot/blob/master/others/README-Elements/wireshark3.png"/>
 </p>
+
+12. **Todos os eventos do fluxo do mDNS são capturados no Detecter. A partir deles você pode implementar novas features.**
