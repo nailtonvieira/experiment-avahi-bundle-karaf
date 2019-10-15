@@ -161,7 +161,7 @@ public class ThingSimulator implements IClientCallback, IEntryGroupCallback {
      * @throws Exception If there is an error of some sort
      */
     public static void main(String args[]) throws Exception {
-        System.setProperty("java.library.path", "/usr/lib/jni");
+        System.setProperty("java.library.path", "/usr/lib");
         Field fieldSysPath = ClassLoader.class.getDeclaredField("sys_paths");
         fieldSysPath.setAccessible(true);
         fieldSysPath.set(null, null);
