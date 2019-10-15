@@ -9,7 +9,7 @@ public class Activator implements BundleActivator, IDetecter {
     
     public void start(BundleContext context) throws Exception {
         
-        System.setProperty("java.library.path", "/usr/lib/jni");
+        System.setProperty("java.library.path", "/usr/lib");
         Field fieldSysPath = ClassLoader.class.getDeclaredField("sys_paths");
         fieldSysPath.setAccessible(true);
         fieldSysPath.set(null, null);
