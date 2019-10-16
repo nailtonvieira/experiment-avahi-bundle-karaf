@@ -1,8 +1,11 @@
+
 # Simulador de Things com Zeroconf
 
 Primeiro, é preciso entender o que é o mDNS e qual é o seu propósito. O melhor material prático que encontrei foi esse: [https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NetServices/Introduction.html](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NetServices/Introduction.html). Ele dá exemplos e uma ótima explicação.
 
 ## Fazendo testes com Avahi usando o Raspberry PI
+
+Abaixo estão os passos para publicar serviços via RaspberryPI e encontrar esses serviços:
 
  - [ ] Executar **sudo service avahi-daemon status** Caso o comando não exista, instalar o Avahi no Raspberry PI: `sudo apt-get install db5.1-util libgcrypt11-dev avahi-daemon libavahi-client-dev libdb5.3-dev` e `sudo update-rc.d avahi-daemon defaults`
  - [ ] Acessar a pasta **/etc/avahi/services** do Raspberry PI
@@ -27,8 +30,9 @@ Primeiro, é preciso entender o que é o mDNS e qual é o seu propósito. O melh
  - [ ] Entrar na mesma rede (wifi ou Ethernet) que o Raspberry PI está
  - [ ] Verificar no aplicativo se o service **nome_do_servico** está presente no aplicativo
  - [ ] Você também pode publicar manualmente pela CLI do Avahi ex: **avahi-publish -s nome_do_servico _mqtt._tcp 1883**. Aqui está um ótimo tutorial sobre os comandos do CLI do Avahi: [https://www.win.tue.nl/~johanl/educ/IoT-Course/mDNS-SD%20Tutorial.pdf](https://www.win.tue.nl/~johanl/educ/IoT-Course/mDNS-SD%20Tutorial.pdf)
+ - [ ] Você pode usar o comando ping para encontrar o raspberry na rede: `ping raspberrypi.local` a partir de qualquer outro dispositivo na mesma rede. Isso é possível porque o Avahi já configura um nome com .local na rede, assim que entra na rede.
 
-Mais informções e exemplos sobre o arquivo XML do Avahi aqui: [https://kodi.wiki/view/Avahi_Zeroconf#What_about_it.3F](https://kodi.wiki/view/Avahi_Zeroconf#What_about_it.3F)
+Mais informações e exemplos sobre o arquivo XML do Avahi aqui: [https://kodi.wiki/view/Avahi_Zeroconf#What_about_it.3F](https://kodi.wiki/view/Avahi_Zeroconf#What_about_it.3F)
 
 ## Instalar o Avahi client no Ubuntu
 
