@@ -2,6 +2,33 @@
 
 Primeiro, é preciso entender o que é o mDNS e qual é o seu propósito. O melhor material prático que encontrei foi esse: [https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NetServices/Introduction.html](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/NetServices/Introduction.html). Ele dá exemplos e uma ótima explicação.
 
+## Fazendo testes com Avahi usando o Raspberry PI
+
+ - [ ] Acessar a pasta **/etc/avahi/services** do Raspberry PI
+ - [ ] Adicione o XML abaixo (como um novo arquivo) para criar um novo service
+ 
+>     <?xml version="1.0" standalone='no'?>
+>     <!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+>     <service-group>
+>      <name replace-wildcards="yes">nome_do_servico</name>
+>       <service>
+>        <type>_mqtt._tcp</type>
+>        <port>1883</port>
+>        <txt-record>minha_variavel=arduino_wiser_001</txt-record>
+>        <txt-record>outra_variavel=driver_sensor_temperatura</txt-record>
+>       </service>
+>     </service-group>
+
+ 
+ 
+ - [ ] Recarregar o Avahi service com **sudo systemctl reload avahi-daemon** ou reiniciar com **sudo systemctl restart avahi-daemon**
+ - [ ]  Instalar o aplicativo Service Browser no Android: [https://play.google.com/store/apps/details?id=com.druk.servicebrowser&hl=en](https://play.google.com/store/apps/details?id=com.druk.servicebrowser&hl=en)
+ - [ ] Entrar na mesma rede (wifi ou Ethernet) que o Raspberry PI está
+ - [ ] Verificar no aplicativo se o service **nome_do_servico** está presente
+ - [ ] Você também pode publicar manualmente pela CLI do Avahi ex: **avahi-publish -s nome_do_servico _mqtt._tcp 1883**. Aqui está um ótimo tutorial sobre os comandos do CLI do Avahi: [https://www.win.tue.nl/~johanl/educ/IoT-Course/mDNS-SD%20Tutorial.pdf](https://www.win.tue.nl/~johanl/educ/IoT-Course/mDNS-SD%20Tutorial.pdf)
+
+Mais informções e exemplos aqui: [https://kodi.wiki/view/Avahi_Zeroconf#What_about_it.3F](https://kodi.wiki/view/Avahi_Zeroconf#What_about_it.3F)
+
 ## Instalar o Avahi client no Ubuntu
 
     sudo apt-get install avahi-common
