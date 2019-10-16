@@ -28,7 +28,7 @@ Primeiro, é preciso entender o que é o mDNS e qual é o seu propósito. O melh
  - [ ] Verificar no aplicativo se o service **nome_do_servico** está presente no aplicativo
  - [ ] Você também pode publicar manualmente pela CLI do Avahi ex: **avahi-publish -s nome_do_servico _mqtt._tcp 1883**. Aqui está um ótimo tutorial sobre os comandos do CLI do Avahi: [https://www.win.tue.nl/~johanl/educ/IoT-Course/mDNS-SD%20Tutorial.pdf](https://www.win.tue.nl/~johanl/educ/IoT-Course/mDNS-SD%20Tutorial.pdf)
 
-Mais informções e exemplos aqui: [https://kodi.wiki/view/Avahi_Zeroconf#What_about_it.3F](https://kodi.wiki/view/Avahi_Zeroconf#What_about_it.3F)
+Mais informções e exemplos sobre o arquivo XML do Avahi aqui: [https://kodi.wiki/view/Avahi_Zeroconf#What_about_it.3F](https://kodi.wiki/view/Avahi_Zeroconf#What_about_it.3F)
 
 ## Instalar o Avahi client no Ubuntu
 
