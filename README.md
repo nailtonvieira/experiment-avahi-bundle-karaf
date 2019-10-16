@@ -4,6 +4,7 @@ Primeiro, é preciso entender o que é o mDNS e qual é o seu propósito. O melh
 
 ## Fazendo testes com Avahi usando o Raspberry PI
 
+ - [ ] Executar **sudo service avahi-daemon status** Caso o comando não exista, instalar o Avahi no Raspberry PI: `sudo apt-get install db5.1-util libgcrypt11-dev avahi-daemon libavahi-client-dev libdb5.3-dev` 
  - [ ] Acessar a pasta **/etc/avahi/services** do Raspberry PI
  - [ ] Adicione o XML abaixo (como um novo arquivo) para criar um novo service
  
