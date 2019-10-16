@@ -34,7 +34,6 @@ Mais informções e exemplos sobre o arquivo XML do Avahi aqui: [https://kodi.wi
 
     sudo apt-get install avahi-common
     sudo apt-get install libavahi-common-dev
-    sudo apt-get install libavahi-common-dev
     sudo apt-get install libavahi-glib-dev
     sudo apt-get install libavahi-client-dev
 
