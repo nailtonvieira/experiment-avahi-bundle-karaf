@@ -43,7 +43,7 @@ Mais informações e exemplos sobre o arquivo XML do Avahi aqui: [https://kodi.w
 
 ## Baixar o arquivo e descompactar
 
-https://github.com/nailtonvieira/cloudsemanticwot/blob/master/experiment/avahi_JNI.tar
+https://github.com/nailtonvieira/experiment-avahi-bundle-karaf/blob/master/avahi_JNI/avahi_JNI.tar
 
     Copiar o avahi4j.jar para o diretório /usr/share/java 
     Copiar libavahi4j.so para o diretório /usr/lib 
